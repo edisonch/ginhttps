@@ -1,0 +1,18 @@
+{
+    "CN": "localhost",
+    "hosts": [
+        "localhost"
+    ],
+    "key": {
+        "algo": "ecdsa",
+        "size": 256
+    },
+    "names": [
+        {
+            "C": "ID",
+            "ST": "DKI Jakarta",
+            "L": "Jakarta"
+        }
+    ]
+}
+
