@@ -26,14 +26,14 @@ func main() {
 	})
 	router.Use(LoadTls())
 	//Enable port listening
-	router.RunTLS(":10080", "server.pem", "server-key.pem")
+	router.RunTLS(":3030", "server.pem", "server-key.pem")
 }
 
 func LoadTls() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		middleware := secure.New(secure.Options{
 			SSLRedirect: true,
-			SSLHost:     "localhost:10080",
+			SSLHost:     "localhost:3030",
 		})
 		err := middleware.Process(c.Writer, c.Request)
 		if err != nil {
