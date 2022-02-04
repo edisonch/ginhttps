@@ -12,7 +12,9 @@ class App extends Component {
     // });
     // process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
-    return fetch(URL + `${e.target.name}`, {headers: token})
+    return fetch(URL + `${e.target.name}`, {
+      headers: { 'Content-Type':'application/json','Access-Control-Allow-Origin':'*' }
+    })
       .then(response => response.json().then(data => ({ status: response.status, data: data })))
       .then(res => {
         console.log(res);
