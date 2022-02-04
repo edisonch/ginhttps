@@ -45,18 +45,18 @@ class App extends Component {
   }
 }
 
-function authHeader() {
-  let origin = 'http://localhost:3000';
-  console.log('origin', origin);
-  let headers = new Headers();
-  headers.append('Content-Type', 'application/json');
-  headers.append('Accept', 'application/json');
-  headers.append('Origin', origin);
-  headers.append('Access-Control-Allow-Origin', '*');
-  headers.append('Access-Control-Allow-Methods', 'GET, POST, PATCH, PUT, DELETE, OPTIONS');
-  headers.append('Access-Control-Allow-Headers', 'Origin, Content-Type, X-Auth-Token');
-
-  return headers;
-}
+// function authHeader() {
+//   let origin = 'http://localhost:3000';
+//   console.log('origin', origin);
+//   let headers = new Headers();
+//   headers.append('Content-Type', 'application/json');
+//   headers.append('Accept', 'application/json');
+//   headers.append('Origin', origin);
+//   headers.append('Access-Control-Allow-Origin', '*');
+//   headers.append('Access-Control-Allow-Methods', 'GET, POST, PATCH, PUT, DELETE, OPTIONS');
+//   headers.append('Access-Control-Allow-Headers', 'Origin, Content-Type, X-Auth-Token');
+//
+//   return headers;
+// }
 
 export default App;
