@@ -6,7 +6,7 @@ const URL = "http://localhost:3030/api/";
 class App extends Component {
   handleButton = (e) => {
     console.log('handle button:', e.target);
-    const token = authHeader();
+    // const token = authHeader();
     // const agent = new https.Agent({
     //   rejectUnauthorized: false
     // });
